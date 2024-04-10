@@ -1,0 +1,6 @@
+PROGRAMA
+    DIVISIONES
+        SECCIONES
+            PÁRRAFOS
+                FRASES
+                    DECLARACIONES
