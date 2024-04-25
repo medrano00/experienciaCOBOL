@@ -47,15 +47,24 @@
       * que "Los caracteres simbólicos (x) son (x.x.x)".
 
            INPUT-OUTPUT SECTION.
+      * Entrada y Salida de código
        DATA DIVISION.
        FILE SECTION.
+      * Sección opcional. Sin esta sección, el programa quedaría de una
+      * manera estática.
+      * Sección donde se manejan los archivos de datos que manejará
+      * COBOL.
        WORKING-STORAGE SECTION.
+      * Sección donde se asignarán variables para trabajar.
+           01 NUMERO1 PIC 999 VALUE 15.
        PROCEDURE DIVISION.
+      * Sección donde se manejan los procedimientos de los datos.
        MAIN-PROCEDURE.
       * Se puede hacer más de un display para mostrar resultados.
             DISPLAY ANGULAR-DERECHA " Holi " ANGULAR-IZQUIERDA.
             DISPLAY "Medio: " MEDIO.
             DISPLAY "Un cuarto: " CUARTO.
             DISPLAY "Tres cuartos: " TRES-CUARTOS.
+            DISPLAY NUMERO1.
             STOP RUN.
        END PROGRAM PRIMER-PROGRAMA-COBOL.
